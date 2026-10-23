@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Оқушы дауысы — опрос учеников о школе</title>
+<meta name="description" content="Результаты опроса 143 учеников: столовая, Wi-Fi, спортзал, классы. RU / ҚАЗ.">
+<meta property="og:type" content="website"><meta property="og:title" content="Оқушы дауысы — опрос учеников о школе"><meta property="og:description" content="Результаты опроса 143 учеников: столовая, Wi-Fi, спортзал, классы. RU / ҚАЗ.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F2F5FA" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0E1424" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#F2F5FA;--surface:#fff;--ink:#14213D;--mute:#56627C;--line:#DCE2EE;--good:#0B7A6D;--bad:#C8335E;--track:#E7ECF5;--on:#fff;
+--head:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1424;--surface:#161E33;--ink:#E8ECF6;--mute:#9AA6C0;--line:#26304B;--good:#2FC4B0;--bad:#F06A90;--track:#222C47;--on:#0A1020}}
+:root[data-theme="dark"]{--bg:#0E1424;--surface:#161E33;--ink:#E8ECF6;--mute:#9AA6C0;--line:#26304B;--good:#2FC4B0;--bad:#F06A90;--track:#222C47;--on:#0A1020}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--body)}
+main{max-width:900px;margin:0 auto;padding:36px max(20px,env(safe-area-inset-right)) 64px max(20px,env(safe-area-inset-left))}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;background:var(--surface);padding:3px}
+.lang button{font:500 14px var(--body);border:0;background:none;color:var(--mute);padding:10px 18px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.lang button:focus-visible,.share:focus-visible{outline:2px solid var(--good);outline-offset:2px}.share{font:500 14px var(--body);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:10px 18px;cursor:pointer}
+h1{font:700 clamp(32px,7vw,56px)/1.05 var(--head);margin:0 0 12px;letter-spacing:-.02em;overflow-wrap:anywhere}
+h2{font:700 clamp(18px,3.4vw,24px)/1.25 var(--head);margin:0 0 8px;letter-spacing:-.01em;overflow-wrap:anywhere}
+.sub{font-size:19px;color:var(--mute);margin:0 0 28px;max-width:60ch}
+.lead{font-size:20px;line-height:1.5;max-width:62ch;margin:0 0 24px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin:0 0 36px;padding:14px 0;border-block:1px solid var(--line);color:var(--mute);font-size:15px}
+.facts b{color:var(--ink);font-weight:600;font-size:17px}
+section{margin:0 0 56px}
+.note{color:var(--mute);font-size:15px;margin:0 0 20px;max-width:64ch}
+.legend{display:flex;gap:18px;font-size:14px;color:var(--mute);margin:0 0 14px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 22px 8px}
+.card.p{padding-bottom:22px}
+.grid2{display:grid;grid-template-columns:210px 1fr;gap:28px;align-items:center}
+.pie{text-align:center;font-size:14px;color:var(--mute);line-height:1.3}
+.pie svg{display:block;margin:0 auto 8px}
+.row{display:grid;grid-template-columns:230px 1fr;gap:6px 18px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row.s{border:0;padding:8px 0;grid-template-columns:110px 1fr}
+.lab{font-weight:500;line-height:1.3}.lab small{display:block;color:var(--mute);font-weight:400;font-size:13px}
+.bar{position:relative;display:flex;height:34px;border-radius:7px;overflow:hidden;background:var(--track)}
+.bar span{display:flex;align-items:center;font:600 14px var(--body);color:var(--on);padding:0 10px;white-space:nowrap;overflow:hidden}
+.bar .g{background:var(--good)}.bar .b{background:var(--bad);justify-content:flex-end}
+.bar .mid{position:absolute;left:50%;top:-3px;bottom:-3px;border-left:2px dashed var(--ink);opacity:.55}
+.minis{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.mini{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 10px 14px;text-align:center;font-size:14px;line-height:1.3}
+.mini svg{display:block;margin:0 auto 10px}.mini small{display:block;color:var(--mute);margin-top:4px;font-size:12px}
+.two{display:flex;flex-wrap:wrap;gap:28px 56px;justify-content:center}
+.gaptxt{margin:20px 0 0;font-size:18px;text-align:center}
+.themes{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.theme{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 20px;min-width:0;overflow-wrap:anywhere}
+.theme h3{margin:0 0 8px;font:600 17px var(--body);display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 12px}
+.theme h3 span{color:var(--mute);font-weight:400;font-size:15px;white-space:nowrap}
+.theme .bar{height:8px;margin-bottom:12px}.theme .bar span{padding:0;background:var(--bad)}
+.theme blockquote{margin:0;padding-left:14px;border-left:3px solid var(--bad)}
+.theme blockquote p{margin:0}.theme blockquote .ru{color:var(--mute);font-size:15px}
+footer{color:var(--mute);font-size:14px;border-top:1px solid var(--line);padding-top:18px;max-width:70ch}
+@media (max-width:620px){.row,.row.s{grid-template-columns:minmax(0,1fr)}.grid2{grid-template-columns:minmax(0,1fr)}main{padding-top:24px}.card{padding:18px 16px 6px}.card.p{padding-bottom:18px}.minis{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.mini{padding:14px 8px}.mini svg{width:84px;height:84px}.two{flex-wrap:nowrap;gap:12px}.two .pie{flex:1;min-width:0}.two .pie svg{width:100%;max-width:140px;height:auto}.gaptxt{font-size:16px}}
+@media (prefers-reduced-motion:reduce){.bar span,.arc{transition:none}}
+</style>
+</head>
+<body>
+<main>
+<noscript><p>Для просмотра нужен JavaScript. Көру үшін JavaScript қажет.</p></noscript>
+<div class="top"><button class="share" id="share" data-i="share"></button><div class="lang" role="group" aria-label="Тіл / Язык"><button data-l="ru">RU</button><button data-l="kk">ҚАЗ</button></div></div>
+<header>
+<h1>Оқушы дауысы</h1>
+<p class="sub" data-i="sub"></p>
+<p class="lead" id="lead"></p>
+<div class="facts" id="facts"></div>
+</header>
+
+<section><h2 data-i="h_all"></h2><p class="note" data-i="n_all"></p>
+<div class="card"><div class="grid2"><div class="pie" id="pieall"></div><div id="cats"></div></div></div></section>
+
+<section><h2 data-i="h_rank"></h2><p class="note" data-i="n_rank"></p>
+<div class="legend"><span><i style="background:var(--good)"></i><b data-i="leg_g" style="font-weight:400"></b></span><span><i style="background:var(--bad)"></i><b data-i="leg_b" style="font-weight:400"></b></span></div>
+<div class="card" id="rank"></div></section>
+
+<section><h2 data-i="h_q"></h2><p class="note" data-i="n_q"></p><div class="minis" id="minis"></div></section>
+
+<section><h2 data-i="h_wifi"></h2><p class="note" data-i="n_wifi"></p>
+<div class="card p"><div class="two" id="wifi"></div><p class="gaptxt" id="gaptxt"></p></div></section>
+
+<section><h2 data-i="h_com"></h2><p class="note" id="cnote"></p><div class="themes" id="themes"></div></section>
+
+<footer data-i="foot"></footer>
+</main>
+<script>
+const D={"total": 143, "q": [{"k": "canteen", "label": "Устраивает планировка столовой", "group": "Столовая", "n": 141, "pos": 95, "pct": 67.4}, {"k": "queue", "label": "Очередь в столовой не мешает", "group": "Столовая", "n": 141, "pos": 52, "pct": 36.9}, {"k": "wifi_q", "label": "Устраивает качество Wi-Fi", "group": "Интернет", "n": 140, "pos": 57, "pct": 40.7}, {"k": "gym_n", "label": "Спортивного инвентаря хватает", "group": "Спорт", "n": 141, "pos": 86, "pct": 61.0}, {"k": "gym_q", "label": "Качество спортинвентаря хорошее", "group": "Спорт", "n": 140, "pos": 103, "pct": 73.6}, {"k": "outdoor", "label": "Довольны изменениями на уличной площадке", "group": "Спорт", "n": 139, "pos": 104, "pct": 74.8}, {"k": "locker", "label": "Раздевалки удобные", "group": "Спорт", "n": 140, "pos": 85, "pct": 60.7}, {"k": "temp", "label": "В классах комфортная температура", "group": "Классы", "n": 141, "pos": 100, "pct": 70.9}, {"k": "desks", "label": "Парты и стулья удобные", "group": "Классы", "n": 140, "pos": 89, "pct": 63.6}], "wifi": {"n": 141, "yes": 123, "pct": 87.2}, "themes": [{"name": "Столовая и очереди", "n": 6, "kz": "Асхана қолайсыз кезек көп", "ru": "Столовая неудобная, большие очереди"}, {"name": "Парты, стулья, кабинеты", "n": 6, "kz": "партам шиқылдай береді жөндеу керек", "ru": "Парта скрипит, нужен ремонт (кабинет 110)"}, {"name": "Туалеты", "n": 4, "kz": "Даретханасында кагаз жок", "ru": "В туалете нет бумаги"}, {"name": "Спортинвентарь", "n": 3, "kz": "құрал-жабдықтарды жаңарту қажет", "ru": "Нужно обновить спортивный инвентарь"}, {"name": "Перемена и выход в магазин", "n": 2, "kz": "ұзақ қоңырау 10 ақ минут сосын магазинге жібермит", "ru": "Большая перемена всего 10 минут, в магазин не выпускают"}, {"name": "Питьевая вода", "n": 1, "kz": "Ылғи су аз, жетіспиді", "ru": "Воды всё время не хватает"}], "comments": 16, "avg": 61};
+const $=id=>document.getElementById(id);
+const P=x=>Math.round(x)+'%';
+const by=k=>D.q.find(x=>x.k===k);
+const L={
+ru:{share:`Поделиться`,done:`Ссылка скопирована`,sub:`Голос учеников: что в школьной инфраструктуре работает, а что нет`,
+h_all:`Общая картина`,n_all:`Все ответы на все вопросы вместе и средний результат по направлениям.`,cap:`доля ответов «всё устраивает»`,
+h_rank:`Довольны ли ученики`,n_rank:`Доля ответивших «всё устраивает» по каждому пункту, от высоких оценок к низким. Если зелёная часть не доходит до пунктирной линии (50%), довольно меньшинство.`,
+leg_g:`Устраивает`,leg_b:`Не устраивает`,h_q:`По каждому вопросу`,n_q:`Каждый круг показывает долю тех, кого всё устраивает.`,
+h_wifi:`Wi-Fi: запрос есть, качества нет`,n_wifi:`Почти все согласны, что интернет нужен, но текущим качеством довольна меньшая часть.`,
+w_need:`Считают, что бесплатный Wi-Fi нужен`,w_qual:`Довольны текущим качеством`,
+h_com:`Что ученики написали сами`,ans:`ответили`,men:`упоминаний: `,
+foot:`Проценты считаны от числа ответивших на конкретный вопрос: пустые ответы не учитываются, вариант «Жок» приравнен к «Жоқ». В вопросе об очереди «устраивает» значит ответ «нет, не мешает». Темы комментариев сгруппированы вручную, один комментарий может попасть в несколько тем; русский перевод цитат вольный. Опрос проходил 12–13 октября 2026.`,
+lab:{canteen:`Устраивает планировка столовой`,queue:`Очередь в столовой не мешает`,wifi_q:`Устраивает качество Wi-Fi`,gym_n:`Спортивного инвентаря хватает`,gym_q:`Качество спортинвентаря хорошее`,outdoor:`Довольны изменениями на уличной площадке`,locker:`Раздевалки удобные`,temp:`В классах комфортная температура`,desks:`Парты и стулья удобные`},
+grp:{Столовая:`Столовая`,Интернет:`Интернет`,Спорт:`Спорт`,Классы:`Классы`},
+th:[`Столовая и очереди`,`Парты, стулья, кабинеты`,`Туалеты`,`Спортинвентарь`,`Перемена и выход в магазин`,`Питьевая вода`],
+lead:()=>`В среднем «всё хорошо» отвечают ${D.avg}% учеников. Лучше всего оценены уличная площадка (${P(by('outdoor').pct)}), качество спортинвентаря (${P(by('gym_q').pct)}) и температура в классах (${P(by('temp').pct)}). Меньше половины довольны двумя вещами: очередью в столовой (${P(by('queue').pct)}) и качеством Wi-Fi (${P(by('wifi_q').pct)}).`,
+facts:()=>`<span><b>${D.total}</b> ответов</span><span><b>${D.q.length}</b> вопросов «да / нет»</span><span><b>${D.comments}</b> содержательных комментариев</span>`,
+gap:g=>`Разрыв между запросом и качеством: <b>${g} п.п.</b> Это самый заметный разрыв в опросе.`,
+com:()=>`Открытый вопрос заполнили ${D.comments} из ${D.total} участников. Чаще всего писали про столовую и мебель в классах. Цитаты даны в оригинале, с переводом.`},
+kk:{share:`Бөлісу`,done:`Сілтеме көшірілді`,sub:`Оқушылар үні: мектеп инфрақұрылымында не жақсы, не жетіспейді`,
+h_all:`Жалпы көрініс`,n_all:`Барлық сұрақтарға берілген барлық жауаптар және бағыттар бойынша орташа нәтиже.`,cap:`«бәрі қолайлы» деген жауаптар үлесі`,
+h_rank:`Оқушылар қанағаттана ма`,n_rank:`Әр тармақ бойынша «бәрі қолайлы» деп жауап бергендер үлесі, жоғарыдан төменге қарай. Жасыл бөлік үзік сызыққа (50%) жетпесе, қанағаттанғандар азшылық.`,
+leg_g:`Қолайлы`,leg_b:`Қолайсыз`,h_q:`Әр сұрақ бойынша`,n_q:`Әр шеңбер бәрі қолайлы деп санайтындардың үлесін көрсетеді.`,
+h_wifi:`Wi-Fi: сұраныс бар, сапа жоқ`,n_wifi:`Интернет қажет екеніне барлығы дерлік келіседі, бірақ қазіргі сапасына көңілі толатындар аз.`,
+w_need:`Тегін Wi-Fi қажет деп санайды`,w_qual:`Қазіргі сапасына көңілі тола`,
+h_com:`Оқушылар өздері не жазды`,ans:`жауап берген`,men:`аталған: `,
+foot:`Пайыздар нақты сұраққа жауап бергендер санынан есептелген: бос жауаптар есепке алынбады, «Жок» нұсқасы «Жоқ» деп саналды. Кезек туралы сұрақта «қолайлы» дегені «жоқ, кедергі емес» деген жауап. Пікірлер тақырыптары бойынша қолмен топтастырылған, бір пікір бірнеше тақырыпқа кіруі мүмкін. Сауалнама 2026 жылғы 12–13 қазанда өтті.`,
+lab:{canteen:`Асхананың орналасуы қолайлы`,queue:`Асханадағы кезек кедергі келтірмейді`,wifi_q:`Wi-Fi сапасына көңілі тола`,gym_n:`Спорт құрал-жабдығы жеткілікті`,gym_q:`Спорт құрал-жабдығының сапасы жақсы`,outdoor:`Сыртқы спорт алаңындағы өзгерістерге көңілі тола`,locker:`Киім ауыстыратын бөлмелер қолайлы`,temp:`Сыныптағы температура қолайлы`,desks:`Парталар мен орындықтар ыңғайлы`},
+grp:{Столовая:`Асхана`,Интернет:`Интернет`,Спорт:`Спорт`,Классы:`Сыныптар`},
+th:[`Асхана және кезек`,`Парталар, орындықтар, кабинеттер`,`Дәретханалар`,`Спорт құрал-жабдығы`,`Үзіліс және дүкенге шығу`,`Ауыз су`],
+lead:()=>`Орта есеппен оқушылардың ${D.avg}%-ы «бәрі жақсы» деп жауап берген. Ең жоғары баға: сыртқы спорт алаңы (${P(by('outdoor').pct)}), спорт құрал-жабдығының сапасы (${P(by('gym_q').pct)}) және сыныптағы температура (${P(by('temp').pct)}). Жартысынан азы екі нәрсеге қанағаттанған: асханадағы кезекке (${P(by('queue').pct)}) және Wi-Fi сапасына (${P(by('wifi_q').pct)}).`,
+facts:()=>`<span><b>${D.total}</b> жауап</span><span><b>${D.q.length}</b> «иә / жоқ» сұрағы</span><span><b>${D.comments}</b> мазмұнды пікір</span>`,
+gap:g=>`Сұраныс пен сапа арасындағы айырмашылық: <b>${g}</b> пайыздық тармақ. Бұл сауалнамадағы ең байқалатын алшақтық.`,
+com:()=>`Ашық сұраққа ${D.total} қатысушының ${D.comments}-ы мазмұнды жауап жазды. Көбіне асхана мен сынып жиһазы туралы жазған. Дәйексөздер түпнұсқада берілген.`}};
+function donut(p,sz,sw,cls){const r=(sz-sw)/2,c=2*Math.PI*r,h=sz/2;
+return `<svg viewBox="0 0 ${sz} ${sz}" width="${sz}" height="${sz}" role="img" aria-label="${Math.round(p)}%"><circle cx="${h}" cy="${h}" r="${r}" fill="none" stroke="var(--bad)" stroke-width="${sw}"/><circle class="arc" cx="${h}" cy="${h}" r="${r}" fill="none" stroke="var(--good)" stroke-width="${sw}" stroke-dasharray="${c*p/100} ${c}" transform="rotate(-90 ${h} ${h})"/><text x="${h}" y="${h}" text-anchor="middle" dominant-baseline="central" fill="var(--ink)" style="font:600 ${Math.round(sz*.2)}px var(--head)">${Math.round(p)}%</text></svg>`}
+function render(l){const t=L[l];
+document.documentElement.lang=l==='kk'?'kk':'ru';
+document.querySelectorAll('[data-i]').forEach(e=>e.textContent=t[e.dataset.i]);
+document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
+$('lead').textContent=t.lead();$('facts').innerHTML=t.facts();
+const tp=D.q.reduce((a,x)=>a+x.pos,0),tn=D.q.reduce((a,x)=>a+x.n,0);
+$('pieall').innerHTML=donut(100*tp/tn,170,26)+t.cap;
+const gs=[...new Set(D.q.map(x=>x.group))].map(g=>{const a=D.q.filter(x=>x.group===g);return{g,p:a.reduce((s,x)=>s+x.pct,0)/a.length}}).sort((a,b)=>b.p-a.p);
+$('cats').innerHTML=gs.map(x=>`<div class="row s"><div class="lab">${t.grp[x.g]}</div><div class="bar"><span class="g" data-w="${Math.round(x.p)}">${P(x.p)}</span></div></div>`).join('');
+const r=[...D.q].sort((a,b)=>b.pct-a.pct);
+$('rank').innerHTML=r.map(x=>{const g=Math.round(x.pct),b=100-g;
+return `<div class="row"><div class="lab">${t.lab[x.k]}<small>${t.grp[x.group]} · ${t.ans} ${x.n}</small></div><div class="bar" role="img" aria-label="${t.lab[x.k]}: ${g}% / ${b}%"><span class="g" data-w="${g}">${g}%</span><span class="b" data-w="${b}">${b}%</span><i class="mid"></i></div></div>`}).join('');
+$('minis').innerHTML=r.map(x=>`<div class="mini">${donut(x.pct,96,14)}${t.lab[x.k]}<small>${t.grp[x.group]} · ${x.n}</small></div>`).join('');
+const w=D.wifi,wq=by('wifi_q');
+$('wifi').innerHTML=`<div class="pie">${donut(w.pct,150,22)}${t.w_need}</div><div class="pie">${donut(wq.pct,150,22)}${t.w_qual}</div>`;
+$('gaptxt').innerHTML=t.gap(Math.round(w.pct)-Math.round(wq.pct));
+$('cnote').textContent=t.com();
+$('themes').innerHTML=D.themes.map((x,i)=>`<div class="theme"><h3>${t.th[i]}<span>${t.men}${x.n}</span></h3><div class="bar"><span data-w="${Math.round(100*x.n/6)}"></span></div><blockquote><p lang="kk">«…${x.kz}…»</p>${l==='ru'?`<p class="ru">${x.ru}</p>`:''}</blockquote></div>`).join('');
+document.querySelectorAll('[data-w]').forEach(e=>e.style.width=e.dataset.w+'%')}
+let lang='ru';try{lang=localStorage.getItem('lang')||((navigator.language||'').startsWith('kk')?'kk':'ru')}catch(e){}
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{lang=b.dataset.l;try{localStorage.setItem('lang',lang)}catch(e){}render(lang)});
+$('share').onclick=async()=>{const u=location.href;try{if(navigator.share){await navigator.share({title:document.title,url:u});return}}catch(e){if(e&&e.name==='AbortError')return}
+try{await navigator.clipboard.writeText(u);const b=$('share'),o=b.textContent;b.textContent=L[lang].done;setTimeout(()=>b.textContent=o,2000)}catch(e){prompt('',u)}};
+render(lang);
+</script>
+</body>
+</html>
