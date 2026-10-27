@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Оқушы дауысы — мектеп сауалнамасы</title>
+<meta name="description" content="143 оқушының сауалнама нәтижесі: асхана, Wi-Fi, спортзал, сыныптар. ҚАЗ / RU.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0E1424">
+<style>
+:root{
+  --bg:#F4F5F9; --card:#FFFFFF; --ink:#141A2E; --mute:#5B6480; --line:#DDE1EC;
+  --good:#0B7F6D; --bad:#C93C26; --need:#3E58D1; --on:#FFFFFF;
+  --pill:#E9ECF6;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0E1424; --card:#161E36; --ink:#E9ECF6; --mute:#9AA3C0; --line:#263052;
+    --good:#3CC4AC; --bad:#F2806A; --need:#8FA6FF; --on:#0B1020;
+    --pill:#222C4A;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0);
+}
+main{max-width:760px; margin:0 auto; padding:20px 16px 48px}
+header{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:6px}
+h1{font-size:28px; line-height:1.15; margin:0; letter-spacing:-.01em}
+.sub{color:var(--mute); margin:4px 0 28px}
+.lang{display:flex; border:1px solid var(--line); border-radius:999px; padding:3px; background:var(--card)}
+.lang button{
+  font:inherit; font-size:14px; font-weight:600; border:0; background:none; color:var(--mute);
+  padding:6px 14px; border-radius:999px; cursor:pointer;
+}
+.lang button[aria-pressed=true]{background:var(--ink); color:var(--bg)}
+button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--need); outline-offset:2px}
+h2{font-size:20px; margin:36px 0 4px}
+h3{font-size:15px; margin:22px 0 8px; color:var(--mute); font-weight:600}
+.hint{color:var(--mute); font-size:14px; margin:0 0 4px}
+
+/* questions */
+.q{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 14px 12px; margin:0 0 10px}
+.qt{display:flex; gap:10px; align-items:flex-start; justify-content:space-between; font-weight:500}
+.bar{display:flex; height:30px; border-radius:6px; overflow:hidden; margin:10px 0 6px; gap:2px}
+.bar span{display:flex; align-items:center; padding:0 10px; font-size:13px; font-weight:700; color:var(--on); min-width:0}
+.cnt{display:flex; gap:16px; font-size:13px; color:var(--mute)}
+.cnt i{display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px}
+.c-good{background:var(--good)} .c-bad{background:var(--bad)}
+
+/* categories */
+.cats{display:grid; gap:6px; margin:14px 0 18px}
+.cat{
+  display:grid; grid-template-columns:minmax(120px,210px) 1fr 28px; align-items:center; gap:12px;
+  font:inherit; color:var(--ink); text-align:left; background:var(--card);
+  border:1px solid var(--line); border-radius:10px; padding:8px 12px; cursor:pointer;
+}
+.cat[aria-pressed=true]{border-color:var(--need); box-shadow:inset 0 0 0 1px var(--need)}
+.cat .track{height:8px; background:var(--pill); border-radius:4px; overflow:hidden}
+.cat .track b{display:block; height:100%; background:var(--need); border-radius:4px}
+.cat em{font-style:normal; font-weight:700; text-align:right}
+
+/* answers table */
+table{width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden}
+th,td{text-align:left; vertical-align:top; padding:12px 14px; border-bottom:1px solid var(--line)}
+th{font-size:14px; color:var(--mute); font-weight:600}
+tr:last-child td{border-bottom:0}
+td.a{width:68%}
+.txt{display:block}
+.txt.clamp{display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden}
+.more{font:inherit; font-size:13px; color:var(--need); background:none; border:0; padding:4px 0 0; cursor:pointer}
+.x2{color:var(--mute); font-size:13px; margin-left:6px}
+.pill{display:inline-block; font-size:13px; background:var(--pill); border-radius:999px; padding:2px 10px; margin:0 6px 6px 0}
+.note{color:var(--mute); font-size:13px; margin:14px 0 0}
+
+@media (max-width:640px){
+  h1{font-size:24px}
+  thead{display:none}
+  tr,td{display:block}
+  td.a{width:auto; border-bottom:0; padding-bottom:4px}
+  td.k{padding-top:0}
+  .cat{grid-template-columns:1fr 28px} .cat .track{display:none}
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Оқушы дауысы</h1>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-l="kk">ҚАЗ</button>
+      <button type="button" data-l="ru">RU</button>
+    </div>
+  </header>
+  <p class="sub" id="sub"></p>
+
+  <section>
+    <h2 id="h-q"></h2>
+    <p class="hint" id="p-q"></p>
+    <div id="questions"></div>
+  </section>
+
+  <section>
+    <h2 id="h-o"></h2>
+    <p class="hint" id="p-o"></p>
+    <div class="cats" id="cats"></div>
+    <table>
+      <thead><tr><th id="th-a"></th><th id="th-c"></th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p class="note" id="note"></p>
+  </section>
+</main>
+
+<script>
+/* ---------- data ---------- */
+// y = «Иә» (green), n = «Жоқ» (red)
+const GROUPS = [
+  {id:'g1', kk:'Асхана', ru:'Столовая'},
+  {id:'g2', kk:'Wi-Fi және интернет', ru:'Wi-Fi и интернет'},
+  {id:'g3', kk:'Спорт', ru:'Спорт'},
+  {id:'g4', kk:'Сынып', ru:'Класс'}
+];
+const Q = [
+  {g:'g1', y:95,  n:46, kk:'Мектептің асхана құрылымы сізге қолайлы ма?', ru:'Устраивает ли вас устройство школьной столовой?'},
+  {g:'g1', y:89,  n:52,  kk:'Асханадағы кезек сізге қиындық тудыра ма?', ru:'Создаёт ли вам трудности очередь в столовой?'},
+  {g:'g2', y:123, n:18, kk:'Мектепте тегін Wi-Fi/интернет болғаны қажет деп ойлайсыз ба?', ru:'Считаете ли вы, что в школе нужен бесплатный Wi-Fi/интернет?'},
+  {g:'g2', y:57,  n:83, kk:'Мектептегі Wi-Fi/интернет сапасына көңіліңіз тола ма?', ru:'Довольны ли вы качеством Wi-Fi/интернета в школе?'},
+  {g:'g3', y:86,  n:55, kk:'Спортзалда құрал-жабдықтар (мысалы, доптар саны) жеткілікті деп ойлайсыз ба?', ru:'Достаточно ли, по-вашему, инвентаря в спортзале (например, мячей)?'},
+  {g:'g3', y:103, n:37, kk:'Спортзалдағы құрал-жабдықтар сапасы жақсы ма?', ru:'Хорошее ли качество инвентаря в спортзале?'},
+  {g:'g3', y:104, n:35, kk:'Сыртқы спорт алаңындағы өзгерістерге көңіліңіз тола ма?', ru:'Довольны ли вы изменениями на уличной спортивной площадке?'},
+  {g:'g3', y:85,  n:55, kk:'Спорт сабағына арналған киім ауыстыратын бөлмелер қолайлы ма?', ru:'Удобны ли раздевалки для уроков физкультуры?'},
+  {g:'g4', y:100, n:41, kk:'Сыныптың ішкі температурасы қолайлы ма?', ru:'Комфортна ли температура в классе?'},
+  {g:'g4', y:89,  n:51, kk:'Сыныптағы орындықтар мен парталар ыңғайлы ма?', ru:'Удобны ли стулья и парты в классе?'}
+];
+
+const CATS = [
+  {id:'q', kk:'Асхана және кезек',          ru:'Столовая и очереди'},
+  {id:'d', kk:'Парталар мен орындықтар',    ru:'Парты и стулья'},
+  {id:'t', kk:'Дәретханалар және тазалық',  ru:'Туалеты и чистота'},
+  {id:'s', kk:'Спортзал және құрал-жабдық', ru:'Спортзал и оборудование'},
+  {id:'b', kk:'Үзіліс және ережелер',       ru:'Перемены и правила'},
+  {id:'o', kk:'Басқа',                      ru:'Другое'}
+];
+
+// c = categories, k = how many students gave this exact answer
+const A = [
+  {c:['q'], k:1, kk:'Мектеп кіреберсіндегі кезек,сабаққа ерте кіруге кедергк',
+               ru:'Очередь на входе в школу мешает зайти на урок заранее.'},
+  {c:['q'], k:1, kk:'Асхана қолайсыз кезек көп',
+               ru:'В столовой неудобно, большие очереди.'},
+  {c:['q','s'], k:1, kk:'Мектепте кейде асханада кезек көп балады. Санымен қатар спортзлдағы құрал-жабдықтарды жаңарту қажет.',
+               ru:'Иногда в школьной столовой большие очереди. Также нужно обновить инвентарь в спортзале.'},
+  {c:['q'], k:1, kk:'Асханадағы кезек',
+               ru:'Очередь в столовой.'},
+  {c:['q'], k:1, kk:'Асхана мүлдем ыңғайсыз!!! Кіріп келген жерде тұрған жерге қойған буфетке өту мүмкін емес!! Адам қыстырылысып, онымен қатар, тамақ ішуге келген бастауыш сыныптарыменде қысыламыз. Кіріп-шығу қиын, есік кішкентай. Біреу шығып бара жатса, біреу кіре алмай тұрады!!! Асханадағы қызметкерлер өте дөрекі, орынсыз сөздер айта береді. 2 қызметкердің орнына көбінесе, 1 адам тұрады, ол бәрімізге қызмет көрсете алмайды, одан әрі қоңырау соғылса, сатпай қояды! Бағалар тиімсіз, өнімдердің ақысы берілген карточкадағы информация дұрыс емес, нақты баға жазылмаған!',
+               ru:'Столовая совершенно неудобна! У входа стоит буфет, и пройти к нему невозможно! Все толкаются, да ещё и теснимся вместе с младшеклассниками, которые пришли поесть. Войти и выйти трудно, дверь маленькая: пока один выходит, другой не может войти! Сотрудники столовой очень грубые, говорят неуместные вещи. Вместо двух сотрудников чаще работает один, он не успевает обслужить всех, а когда звенит звонок, вообще перестаёт продавать! Цены невыгодные, информация на ценнике неверная, точная цена не указана!'},
+  {c:['d','s','b','q'], k:1, kk:'110 дағы парталармен орындықтары ыңғаисыз спорт залдағы доптар сапасыз ұзақ қоңырау 10 ақ минут сосын магазинге жібермит сосын адам көп екінші мектеп керек соткы жинаи берет асханада адамдармен тығылысып тұрасың',
+               ru:'В кабинете 110 парты и стулья неудобные, мячи в спортзале плохого качества, большая перемена всего 10 минут, потом в магазин не пускают, людей много — нужна вторая школа, телефоны постоянно забирают, в столовой стоишь в тесноте среди людей.'},
+  {c:['d','s','b'], k:1, kk:'110 дағы парталар мен столдары ыңғаисыз және доптардың көбісі желі жоқ магазинге жібермит ұзақ қоңырау 10 ақ минут',
+               ru:'В кабинете 110 парты и столы неудобные, большинство мячей в плохом состоянии, в магазин не пускают, большая перемена всего 10 минут.'},
+  {c:['d'], k:1, kk:'110-кабинетте менің отыратын партам шиқылдай береді жөндеу керек.',
+               ru:'В кабинете 110 моя парта постоянно скрипит, её нужно починить.'},
+  {c:['d'], k:1, kk:'Парталарды ауыстыру қажет, үлкен сынып оқушыларына өте ыңғайсыз',
+               ru:'Парты нужно заменить: старшеклассникам в них очень неудобно.'},
+  {c:['d'], k:1, kk:'орындық ыңғайсыз',
+               ru:'Стулья неудобные.'},
+  {c:['d','o'], k:1, kk:'жаңа парталар мен орындықтар ыңғайсыз.Сосын әр кабинетке сай әдемі етіп сәндеу қажет.Сонда ғана ыңғайлы әрі қай кабинет екенін бірден білуге болады.Сосын кабинет сыртына не нөмерін не Мықты тұлғаның атын енгізсе әр адам қай кабинет деп жүрмейтін ед',
+               ru:'Новые парты и стулья неудобные. Ещё каждый кабинет нужно красиво оформить под свой предмет — тогда и удобно, и сразу понятно, какой это кабинет. Если снаружи указать номер или имя выдающегося человека, никому не пришлось бы спрашивать, где какой кабинет.'},
+  {c:['t'], k:2, kk:'Мектептің дәретханаларында тазалық мәселесі бар. Мысалы, тазалықты жиі сақтау қажет',
+               ru:'В школьных туалетах проблемы с чистотой: например, убирать нужно чаще.'},
+  {c:['t'], k:1, kk:'Мектеп әжетханаларындағы санитарлық жағдайдың нашарлығы. Мысалы, жуынатын орындарда сабын мен қағаз сүлгілер жиі болмайды, сондай-ақ крандар бұзылған.',
+               ru:'Плохое санитарное состояние школьных туалетов: у раковин часто нет мыла и бумажных полотенец, а краны сломаны.'},
+  {c:['t'], k:1, kk:'Мектеп Даретханасында кагаз жок',
+               ru:'В школьном туалете нет бумаги.'},
+  {c:['o'], k:1, kk:'Ылғи су аз, жетіспиді',
+               ru:'Воды всегда мало, не хватает.'}
+];
+
+const T = {
+  kk:{
+    sub:'143 оқушының мектеп туралы сауалнамасы',
+    hq:'Иә / Жоқ сұрақтары', pq:'Жауап бермегендер есепке алынбады: әр сұраққа 139–141 оқушы жауап берді.',
+    yes:'Иә', no:'Жоқ',
+    ho:'Ашық жауаптар', po:'Мектеп инфрақұрылымында қандай бір мәселені байқадыңыз және оған мысал келтіріңіз.',
+    tha:'Оқушы жауабы', thc:'Санат',
+    more:'толығырақ', less:'жасыру',
+    note:'Бір жауап бірнеше санатқа жатуы мүмкін. ×2 — бірдей жауап екі оқушыдан. Бос жауаптар («.») есепке алынбады.'
+  },
+  ru:{
+    sub:'Опрос 143 учеников о школе',
+    hq:'Вопросы «да / нет»', pq:'Пропущенные ответы не учитываются: на каждый вопрос ответили 139–141 учеников.',
+    yes:'Да', no:'Нет',
+    ho:'Открытые ответы', po:'Какую одну проблему в школьной инфраструктуре вы заметили? Приведите пример.',
+    tha:'Ответ ученика', thc:'Категория',
+    more:'подробнее', less:'свернуть',
+    note:'Один ответ может относиться к нескольким категориям. ×2 — одинаковый ответ от двух учеников. Пустые ответы («.») не учитываются.'
+  }
+};
+
+/* ---------- render ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let lang = 'kk', filter = null;
+try { const s = localStorage.getItem('lang'); if (s === 'kk' || s === 'ru') lang = s; } catch (e) {}
+
+function render(){
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.l === lang));
+  $('#sub').textContent = t.sub;
+  $('#h-q').textContent = t.hq; $('#p-q').textContent = t.pq;
+  $('#h-o').textContent = t.ho; $('#p-o').textContent = t.po;
+  $('#th-a').textContent = t.tha; $('#th-c').textContent = t.thc;
+  $('#note').textContent = t.note;
+
+  // closed questions
+  let html = '';
+  GROUPS.forEach(g => {
+    html += '<h3>' + esc(g[lang]) + '</h3>';
+    Q.filter(q => q.g === g.id).forEach(q => {
+      const tot = q.y + q.n, py = Math.round(q.y / tot * 100), pn = 100 - py;
+      const cy = 'c-good', cn = 'c-bad';
+      html += '<div class="q"><div class="qt"><span>' + esc(q[lang]) + '</span></div>' +
+        '<div class="bar" role="img" aria-label="' + t.yes + ' ' + py + '%, ' + t.no + ' ' + pn + '%">' +
+        '<span class="' + cy + '" style="flex:' + q.y + '">' + py + '%</span>' +
+        '<span class="' + cn + '" style="flex:' + q.n + '">' + pn + '%</span></div>' +
+        '<div class="cnt"><span><i class="' + cy + '"></i>' + t.yes + ' ' + q.y + '</span>' +
+        '<span><i class="' + cn + '"></i>' + t.no + ' ' + q.n + '</span></div></div>';
+    });
+  });
+  $('#questions').innerHTML = html;
+
+  // category summary (also works as a filter)
+  const count = id => A.filter(a => a.c.includes(id)).reduce((s, a) => s + a.k, 0);
+  const max = Math.max(...CATS.map(c => count(c.id)));
+  $('#cats').innerHTML = CATS.map(c => {
+    const n = count(c.id);
+    return '<button type="button" class="cat" data-c="' + c.id + '" aria-pressed="' + (filter === c.id) + '">' +
+      '<span>' + esc(c[lang]) + '</span><span class="track"><b style="width:' + (n / max * 100) + '%"></b></span><em>' + n + '</em></button>';
+  }).join('');
+
+  // answers table
+  $('#rows').innerHTML = A.filter(a => !filter || a.c.includes(filter)).map(a => {
+    const long = a[lang].length > 200;
+    return '<tr><td class="a"><span class="txt' + (long ? ' clamp' : '') + '">«' + esc(a[lang]) + '»' +
+      (a.k > 1 ? '<span class="x2">×' + a.k + '</span>' : '') + '</span>' +
+      (long ? '<button type="button" class="more" aria-expanded="false">' + t.more + '</button>' : '') + '</td>' +
+      '<td class="k">' + a.c.map(id => '<span class="pill">' + esc(CATS.find(c => c.id === id)[lang]) + '</span>').join('') + '</td></tr>';
+  }).join('');
+}
+
+document.querySelector('.lang').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  lang = b.dataset.l;
+  try { localStorage.setItem('lang', lang); } catch (e) {}
+  render();
+});
+$('#cats').addEventListener('click', e => {
+  const b = e.target.closest('.cat'); if (!b) return;
+  filter = filter === b.dataset.c ? null : b.dataset.c;
+  render();
+});
+$('#rows').addEventListener('click', e => {
+  const b = e.target.closest('.more'); if (!b) return;
+  const txt = b.parentNode.querySelector('.txt'), open = txt.classList.toggle('clamp') === false;
+  b.setAttribute('aria-expanded', open);
+  b.textContent = open ? T[lang].less : T[lang].more;
+});
+render();
+</script>
+</body>
+</html>
